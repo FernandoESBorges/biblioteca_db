@@ -2,24 +2,28 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.unincor.sistema.bancario.admin.model.domain;
+package com.unincor.biblioteca.db.admin.model.domain;
 
 /**
  *
  * @author Ferna
  */
-public class Livros {
+public class Livro {
 
-    private long idLivro;
+    /**
+     *
+     * @author Ferna
+     */
+    private Long idLivro;
     private String titulo;
     private String genero;
     private Autor autor;
 
-    public Livros() {
+    public Livro() {
 
     }
 
-    public Livros(long idLivros, String titulo, String genero, Autor autor) {
+    public Livro(long idLivros, String titulo, String genero, Autor autor) {
         this.idLivro = idLivros;
         this.titulo = titulo;
         this.genero = genero;
@@ -58,6 +62,5 @@ public class Livros {
     public void setAutor(Autor autor) {
         this.autor = autor;
     }
-    
 
 }
